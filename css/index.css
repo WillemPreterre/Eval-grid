@@ -1,1 +1,95 @@
-azeaze
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+/* font-family: 'Strait', sans-serif; */
+body {
+    margin: 0;
+    font-family: 'Strait', sans-serif;
+    background-image: url(../img/mars-mission.jpg);
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns:520px repeat(4, 240px) ;
+    grid-template-rows: 150px 200px 150px 330px 150px  ;
+    grid-template-areas: 
+    "nasa nav nav nav nav"
+    ". . . . ."
+    "titre titre titre titre titre"
+    "homme materiel materiel temps temps"
+    "homme carre capsule cratere drone "
+    ;
+}
+
+.nasa {
+    grid-area: nasa;
+    background-color: purple;
+
+}
+.nav {
+    grid-area: nav;
+    background-color: pink;
+}
+.titre {
+    grid-area: titre;
+    background-color: cyan;
+}
+.materiel {
+    grid-area: materiel;
+    background-color:brown ;
+}
+.temps {
+    grid-area: temps;
+    background-color:orange ;
+}
+.carre {
+    grid-area: carre;
+    background-color: yellow;
+}
+.capsule {
+    grid-area: capsule;
+    background-color: green;
+}
+.cratere {
+    grid-area: cratere;
+    background-color:blue ;
+}
+.drone {
+    grid-area: drone;
+    background-color:red ;
+}
+/*.nasa {
+    padding-left: 150px;
+    padding-top: 100px;
+} */
+
+.nav {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    color: white;
+}
+
+.nav span:hover {
+    text-decoration: underline;
+}
+
+.carre {
+    width: 100%;
+    height: 150px;
+}
+.capsule {
+    width: 100%;
+    height: 150px;
+}
+.cratere {
+    width: 100%;
+    height: 150px;
+}
+.drone {
+    width: 100%;
+    height: 150px;
+}
